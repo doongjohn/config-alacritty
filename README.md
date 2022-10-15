@@ -1,3 +1,3 @@
 # config-alacritty
 
-location: `%APPDATA%\alacritty`
+location: `%APPDATA%\alacritty\alacritty.yml`
