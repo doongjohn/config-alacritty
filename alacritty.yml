@@ -1,5 +1,8 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator
 
+# Live config reload (changes require restart)
+live_config_reload: true
+
 window:
   # Window padding (changes require restart)
   #
@@ -16,15 +19,14 @@ window:
   # - none: neither borders nor title bar
   decorations: full
 
-  startup_mode: fullscreen
+  # startup_mode: fullscreen
 
 # Font configuration (changes require restart)
 font:
   normal:
-    family: "VictorMono NF"
-    style: Medium
+    family: "Hack NF"
   bold:
-    family: "VictorMono NF"
+    family: "Hack NF"
     style: Bold
 
   # Point size of the font
@@ -34,7 +36,7 @@ font:
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 0
-    y: 6
+    y: 10
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
@@ -46,6 +48,11 @@ font:
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: true
+
+cursor:
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  unfocused_hollow: true
 
 # Kanagawa Alacritty Colors
 colors:
@@ -78,22 +85,15 @@ colors:
     foreground: '0xc8c093'
 
   indexed_colors:
-    - { index: 16, color: '0xffa066' }
-    - { index: 17, color: '0xff5d62' }
-
-cursor:
-  # If this is `true`, the cursor will be rendered as a hollow box when the
-  # window is not focused.
-  unfocused_hollow: true
-
-# Live config reload (changes require restart)
-live_config_reload: true
+    # - { index: 16, color: '0xffa066' }
+    # - { index: 17, color: '0xff5d62' }
+    - { index: 16, color: '0x2A2A37' }
+    - { index: 17, color: '0x16161D' }
 
 shell:
   program: "C:\\Windows\\System32\\wsl.exe"
   args:
     - --cd ~
-    - -e tmux # start a tmux server
 
 # shell:
 #   program: "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
