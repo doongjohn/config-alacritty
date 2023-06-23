@@ -24,26 +24,26 @@ window:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: "Hack NF"
+    family: "Hack Nerd Font"
   bold:
-    family: "Hack NF"
+    family: "Hack Nerd Font"
     style: Bold
 
   # Point size of the font
-  size: 14.0
+  size: 13.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
     x: 0
-    y: 10
+    y: 12
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
   # the right, increase the y offset to move the glyph upward.
   glyph_offset:
     x: 0
-    y: 4
+    y: 5
 
 # Use custom cursor colors. If true, display the cursor in the cursor.foreground
 # and cursor.background colors, otherwise invert the colors of the cursor.
@@ -104,10 +104,10 @@ shell:
 key_bindings:
   # Enable Special Keyboard Combinations in Alacritty / Kitty for Neovim
   # https://youtu.be/lHBD6pdJ-Ng
-  - { key: Space, mods: Control, chars: "\x1b[32;5u" }
-  - { key: Period, mods: Control, chars: "\x1b[46;5u" }
-  - { key: Comma, mods: Control, chars: "\x1b[44;5u" }
-  - { key: Semicolon, mods: Control, chars: "\x1b[59;5u" }
+  # - { key: Semicolon, mods: Control, chars: "\x1b[59;5u" }
+  # - { key: Period, mods: Control, chars: "\x1b[46;5u" }
+  # - { key: Comma, mods: Control, chars: "\x1b[44;5u" }
   - { key: Slash, mods: Control, chars: "\x1b[47;5u" }
-  - { key: Return, mods: Control, chars: "\x1b[13;5u" }
-  - { key: Return, mods: Shift, chars: "\x1b[13;2u" }
+  - { key: Space, mods: Control, chars: "\x1b[32;5u" }
+  # - { key: Return, mods: Control, chars: "\x1b[13;5u" }
+  # - { key: Return, mods: Shift, chars: "\x1b[13;2u" }
